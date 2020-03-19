@@ -4,7 +4,7 @@ This repository contains a few tests for the reparameterization technique descri
 
 ## Compiling and running the tests
 
-To run the tests, make sure that you have compiled the version of Mistuba 2 that contains the plugin `src/integrators/diffpath.cpp` (https://github.com/loubetg/mitsuba2). Mitsuba 2 must be compiled with GPU modes enabled because all these tests rely on automatic differentiation. Please see the [Mitsuba 2 documentation](https://mitsuba2.readthedocs.io/en/latest/) for details.
+To run the tests, make sure that you have compiled the version of Mistuba 2 that contains the plugin `src/integrators/path-reparam.cpp` (https://github.com/loubetg/mitsuba2). Mitsuba 2 must be compiled with GPU modes enabled because all these tests rely on automatic differentiation. Please see the [Mitsuba 2 documentation](https://mitsuba2.readthedocs.io/en/latest/) for details.
 
 Once Mitsuba 2 is compiled, you need to run `source setpath.sh` (Unix) in the Mitsuba directory. Then, the tests can be executed with python, using the version of python that has been used to compile Mitsuba 2. For instance: `python3.7 test_light_position.py`.
 

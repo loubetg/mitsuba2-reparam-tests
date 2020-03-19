@@ -81,9 +81,9 @@ path_str =  """<integrator type="path">
                    <integer name="max_depth" value="2"/>
                </integrator>"""
 
-diffpath_str =  """<integrator type="diffpath">
-                       <integer name="max_depth" value="2"/>
-                   </integrator>"""
+path_reparam_str =  """<integrator type="pathreparam">
+                           <integer name="max_depth" value="2"/>
+                       </integrator>"""
 
 if not os.path.isdir(path):
     os.makedirs(path)
@@ -99,7 +99,7 @@ print("Writing " + path + "out_ref.exr")
 # Define the differentiable scene for the optimization
 
 del scene
-scene = make_scene(diffpath_str, 16);
+scene = make_scene(path_reparam_str, 16);
 
 properties = traverse(scene)
 

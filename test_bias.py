@@ -106,7 +106,7 @@ fd_integrator = """<integrator type="path">
 
 diff_spp = 32
 diff_passes = 20
-diff_integrator = """<integrator type="diffpath">
+diff_integrator = """<integrator type="pathreparam">
                          <integer name="max_depth" value="2"/>
                          <integer name="dc_light_samples" value="8"/>
                      </integrator>"""

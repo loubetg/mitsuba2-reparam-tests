@@ -70,12 +70,12 @@ path_str =  """<integrator type="path">
                    <integer name="max_depth" value="2"/>
                </integrator>"""
 
-diffpath_str =  """<integrator type="diffpath">
-                       <integer name="max_depth" value="2"/>
-                       <boolean name="use_variance_reduction" value="true"/>
-                       <boolean name="use_convolution" value="true"/>
-                       <boolean name="disable_gradient_diffuse" value="true"/>
-                   </integrator>"""
+path_reparam_str =  """<integrator type="pathreparam">
+                           <integer name="max_depth" value="2"/>
+                           <boolean name="use_variance_reduction" value="true"/>
+                           <boolean name="use_convolution" value="true"/>
+                           <boolean name="disable_gradient_diffuse" value="true"/>
+                       </integrator>"""
 
 if not os.path.isdir(path):
     os.makedirs(path)
@@ -91,7 +91,7 @@ print("Writing " + path + "out_ref.exr")
 # Define the differentiable scene for the optimization
 
 del scene
-scene = make_scene(diffpath_str, 8);
+scene = make_scene(path_reparam_str, 8);
 
 properties = traverse(scene)
 

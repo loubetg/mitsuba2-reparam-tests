@@ -99,7 +99,7 @@ fd_integrator = """<integrator type="path">
 
 diff_spp = 4
 diff_passes = 10
-diff_integrator = """<integrator type="diffpath">
+diff_integrator = """<integrator type="pathreparam">
                          <integer name="max_depth" value="2"/>
                      </integrator>"""
 
