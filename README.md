@@ -39,6 +39,7 @@ reparameterization technique. Similar images are also computed using finite
 differences for comparison.
 
 - `test_light_position.py`: test derivatives wrt the position of the light source. 
+- `test_light_position_pair.py`: test derivatives wrt the position of two light sources. 
 - `test_object_position.py`: test derivatives wrt the position of a mesh.
 - `test_corkscrew.py`: test similar to Fig. 11 (a) in the paper. 
 - `test_bias.py`: test similar to Fig. 11 (b) in the paper.
