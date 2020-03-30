@@ -43,6 +43,8 @@ differences for comparison.
 - `test_object_position.py`: test derivatives wrt the position of a mesh.
 - `test_corkscrew.py`: test similar to Fig. 11 (a) in the paper. 
 - `test_bias.py`: test similar to Fig. 11 (b) in the paper.
+- `test_envmap.py`: test derivatives in shadows with a sun envmap
+- `test_envmap_and_area.py`: test with both an envmap and a smooth area light
 
 ## Optimization tests
 
