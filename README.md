@@ -45,6 +45,7 @@ differences for comparison.
 - `test_envmap_and_area.py`: test with both an envmap and a smooth area light.
 - `test_fig3_direct_visiblity.py`: Direct visitiblity tests of Fig. 3.
 - `test_fig3_shadows.py`: Shadow tests of Fig. 3.
+- `test_fig3_glossy_reflection.py`: Reflection tests of Fig. 3.
 - `test_fig11_corkscrew.py`: test similar to Fig. 11 (a) in the paper.
 - `test_fig11_bias.py`: test similar to Fig. 11 (b) in the paper.
 
