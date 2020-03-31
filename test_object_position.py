@@ -19,7 +19,7 @@ def make_scene(integrator, spp, param):
         <scene version="2.0.0">
 
             {integrator}
-        
+
             <sensor type="perspective">
                 <string name="fov_axis" value="smaller"/>
                 <float name="near_clip" value="0.1"/>
@@ -57,7 +57,7 @@ def make_scene(integrator, spp, param):
                 <transform name="to_world">
                     <translate z="1.0"/>
                     <translate x="{param}"/>
-                </transform>    
+                </transform>
             </shape>
 
             <shape type="obj" id="planemesh">
@@ -65,13 +65,13 @@ def make_scene(integrator, spp, param):
                 <bsdf type="diffuse"/>
                 <transform name="to_world">
                     <scale value="2.0"/>
-                </transform>    
+                </transform>
             </shape>
         </scene>
     """.format(integrator=integrator, spp=spp, param=param))
 
 def get_diff_param(scene):
-    
+
     # Create a differentiable hyperparameter
     diff_param = mitsuba.core.Float(0.0);
     ek.set_requires_gradient(diff_param);

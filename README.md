@@ -41,10 +41,11 @@ differences for comparison.
 - `test_light_position.py`: test derivatives wrt the position of the light source. 
 - `test_light_position_pair.py`: test derivatives wrt the position of two light sources. 
 - `test_object_position.py`: test derivatives wrt the position of a mesh.
-- `test_corkscrew.py`: test similar to Fig. 11 (a) in the paper. 
-- `test_bias.py`: test similar to Fig. 11 (b) in the paper.
-- `test_envmap.py`: test derivatives in shadows with a sun envmap
-- `test_envmap_and_area.py`: test with both an envmap and a smooth area light
+- `test_envmap.py`: test derivatives in shadows with a sun envmap.
+- `test_envmap_and_area.py`: test with both an envmap and a smooth area light.
+- `test_fig3_direct_visiblity.py`: Direct visitiblity tests of Fig. 3.
+- `test_fig11_corkscrew.py`: test similar to Fig. 11 (a) in the paper.
+- `test_fig11_bias.py`: test similar to Fig. 11 (b) in the paper.
 
 ## Optimization tests
 
