@@ -55,8 +55,8 @@ def make_scene(integrator, spp, translateX, rotateZ, scale):
                 <transform name="to_world">
                     <scale value="2.5"/>
                     <rotate x="0.0" y="0.0" z="1.0" angle="0"/>
-                    <rotate x="0.0" y="0.0" z="1.0" angle="{rotateZ}"/>
                     <translate x="0.0" y="0.0" z="12.0"/>
+                    <rotate x="0.0" y="0.0" z="1.0" angle="{rotateZ}"/>
                     <translate x="{translateX}" y="0.0" z="0.0"/>
                     <scale value="{scale}"/>
                 </transform>
