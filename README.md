@@ -3,14 +3,14 @@
 This repository contains a few tests for the reparameterization technique
 described in the article [Reparameterizing discontinuous integrands for
 differentiable rendering](https://rgl.epfl.ch/publications/Loubet2019Reparameterizing)
-and implemented with [Mitsuba 2](https://github.com/loubetg/mitsuba2/tree/reparam).
+and implemented with [Mitsuba 2](https://github.com/loubetg/mitsuba2/tree/pathreparam).
 
 ## Compiling and running the tests
 
 To run the tests, make sure that you have compiled the version of Mistuba 2
 that contains the plugin `src/integrators/path-reparam.cpp`:
 
-    git clone --branch reparam --recursive https://github.com/loubetg/mitsuba2
+    git clone --branch pathreparam --recursive https://github.com/loubetg/mitsuba2
 
 This branch has a default configuration that enables the compilation of GPU
 modes. Such modes are needed since all the tests rely on automatic
