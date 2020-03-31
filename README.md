@@ -38,16 +38,22 @@ respect to particular parameters of the scene, computed using the
 reparameterization technique. Similar images are also computed using finite 
 differences for comparison.
 
-- `test_light_position.py`: test derivatives wrt the position of the light source. 
-- `test_light_position_pair.py`: test derivatives wrt the position of two light sources. 
-- `test_object_position.py`: test derivatives wrt the position of a mesh.
-- `test_envmap.py`: test derivatives in shadows with a sun envmap.
-- `test_envmap_and_area.py`: test with both an envmap and a smooth area light.
-- `test_fig3_direct_visiblity.py`: Direct visitiblity tests of Fig. 3.
-- `test_fig3_shadows.py`: Shadow tests of Fig. 3.
-- `test_fig3_glossy_reflection.py`: Reflection tests of Fig. 3.
-- `test_fig11_corkscrew.py`: test similar to Fig. 11 (a) in the paper.
-- `test_fig11_bias.py`: test similar to Fig. 11 (b) in the paper.
+Misc. tests:
+- `test_light_position.py`: derivatives wrt the position of the light source. 
+- `test_light_position_pair.py`: derivatives wrt the position of two light sources. 
+- `test_object_position.py`: derivatives wrt the position of a mesh.
+- `test_envmap.py`: derivatives in shadows with a sun envmap.
+- `test_envmap_and_area.py`: derivatives with both an envmap and a smooth area light.
+
+From Fig. 3 in the paper:
+- `test_fig3_direct_visiblity.py`: derivatives on silhouettes.
+- `test_fig3_shadows.py`: derivatives in shadows.
+- `test_fig3_glossy_reflection.py`: derivatives in reflected light.
+- `test_fig3_refraction.py`: derivatives in refraction.
+
+From Fig. 11 in the paper:
+- `test_fig11_corkscrew.py`: test for bias at silhouettes
+- `test_fig11_bias.py`: test for bias in shadows
 
 ## Optimization tests
 
