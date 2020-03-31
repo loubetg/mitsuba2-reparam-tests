@@ -51,9 +51,13 @@ From Fig. 3 in the paper:
 - `test_fig3_glossy_reflection.py`: derivatives in reflected light.
 - `test_fig3_refraction.py`: derivatives in refraction.
 
+From Fig. 6 in the paper:
+- `test_fig6_variance.py`: show the effect of variance reduction and noise in diffuse scattering.
+
 From Fig. 11 in the paper:
 - `test_fig11_corkscrew.py`: test for bias at silhouettes
 - `test_fig11_bias.py`: test for bias in shadows
+
 
 ## Optimization tests
 
