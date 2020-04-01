@@ -103,13 +103,13 @@ def get_diff_param_translation(scene):
 fd_spp = 256
 fd_passes = 10
 fd_integrator = """<integrator type="path">
-                       <integer name="max_depth" value="4"/>
+                       <integer name="max_depth" value="2"/>
                    </integrator>"""
 
 diff_spp = 16
 diff_passes = 10
 diff_integrator = """<integrator type="pathreparam">
-                         <integer name="max_depth" value="4"/>
+                         <integer name="max_depth" value="2"/>
                      </integrator>"""
 
 test_finite_difference(test_name + "/with_variance_reduction", make_scene_translation, get_diff_param_translation,

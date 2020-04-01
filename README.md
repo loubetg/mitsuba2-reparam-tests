@@ -52,7 +52,7 @@ From Fig. 3 in the paper:
 - `test_fig3_refraction.py`: derivatives in refraction.
 
 From Fig. 6 in the paper:
-- `test_fig6_variance.py`: shows the effect of variance reduction and noise in diffuse scattering.
+- `test_fig6_variance.py`: shows the effect of variance reduction.
 
 From Fig. 11 in the paper:
 - `test_fig11_corkscrew.py`: test for bias at silhouettes.
